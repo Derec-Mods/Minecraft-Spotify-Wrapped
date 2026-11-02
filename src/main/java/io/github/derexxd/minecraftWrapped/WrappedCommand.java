@@ -111,6 +111,7 @@ public class WrappedCommand implements CommandExecutor, TabCompleter {
         plugin.getConfig().set("api-key", key);
         plugin.saveConfig();
         plugin.reloadConfig();
+        plugin.startScheduledUpload();
         sender.sendMessage(Component.text("  ✓ ", NamedTextColor.GREEN)
                 .append(Component.text("API key saved! ", NamedTextColor.GREEN))
                 .append(Component.text("Run ", NamedTextColor.GRAY))
@@ -206,6 +207,7 @@ public class WrappedCommand implements CommandExecutor, TabCompleter {
 
     private void handleReload(CommandSender sender) {
         plugin.reloadConfig();
+        plugin.startScheduledUpload();
         sender.sendMessage(Component.text("  ✓ ", NamedTextColor.GREEN)
                 .append(Component.text("Config reloaded.", NamedTextColor.GREEN)));
     }
