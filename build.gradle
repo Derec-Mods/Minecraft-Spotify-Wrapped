@@ -4,15 +4,7 @@ plugins {
 }
 
 group = 'io.github.derexxd'
-version = project.mod_version
-
-base {
-    archivesName = project.archives_base_name
-}
-
-tasks.withType(AbstractArchiveTask).configureEach {
-    archiveVersion.set("${project.mod_version}-${project.minecraft_version}-${project.modloader}")
-}
+version = '1.0.0.0'
 
 repositories {
     mavenCentral()
