@@ -1,8 +1,19 @@
 name: MinecraftWrapped
-version: '1.0.0.0'
+version: '${version}'
 main: io.github.derexxd.minecraftWrapped.MinecraftWrapped
 api-version: '1.18'
-prefix: DerexXD
+prefix: Wrapped
 authors: [ DerexXD, TehloWasTaken ]
 description: Spotify wrapped but for Minecraft! Companion plugin for the wrapped.gg website
-website: https://www.derekchen.dev/
+website: https://wrapped.gg
+
+commands:
+  wrapped:
+    description: Manage the wrapped.gg companion plugin
+    usage: /<command> <upload|reload|status>
+    permission: wrapped.admin
+
+permissions:
+  wrapped.admin:
+    description: Allows managing the wrapped.gg plugin
+    default: op

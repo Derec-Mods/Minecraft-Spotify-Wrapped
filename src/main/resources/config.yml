@@ -1,0 +1,10 @@
+api-key: "YOUR_KEY_HERE"
+
+upload-interval-minutes: 360
+
+source: "plugin"
+
+upload-icon: true
+
+debug: false
+
