@@ -1,0 +1,8 @@
+name: MinecraftWrapped
+version: '1.0.0.0'
+main: io.github.derexxd.minecraftWrapped.MinecraftWrapped
+api-version: '1.18'
+prefix: DerexXD
+authors: [ DerexXD, TehloWasTaken ]
+description: Spotify wrapped but for Minecraft! Companion plugin for the wrapped.gg website
+website: https://www.derekchen.dev/
